@@ -1,2 +1,2 @@
-rootProject.name = 'Daze'
+rootProject.name = 'DazePuzzle'
 include ':entry'
