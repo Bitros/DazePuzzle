@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides-V3/ide_debug_device-0000001053822404-V3#section1112183053510
+ohos {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.p12')
+            storePassword '000000199192E7165839023B472F7E92C3F3F9C35DC9DABEB22FFE332260180DD7858CD908951934D5'
+            keyAlias = 'release'
+            keyPassword '00000019739FE6B1489D1BDDFE40B6DF7F62425C847CA9F42AC1B16B5169DE35FB518F36D22AF38D76'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\Daze Puzzle Release Profile.p7b')
+            certpath file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.cer')
+        }
+        debug {
+            storeFile file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.p12')
+            storePassword '0000001942366173797388F7E27C175986E22574C7EC457C5219BF6BCEF8076E7FD606A989C0EF0DDD'
+            keyAlias = 'release'
+            keyPassword '00000019CE3EAE873A135B486BD7D433897859B95D78FCCB08ECA9D78692D7100C38E74152DA7177BD'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\Daze Puzzle Release Profile.p7b')
+            certpath file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.cer')
+        }
+    }
+    compileSdkVersion 7
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:3.1.2.0'
+        classpath 'com.huawei.ohos:decctest:1.2.7.19'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+}

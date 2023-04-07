@@ -1,0 +1,24 @@
+<div class="container" @swipe="exit">
+    <div class="record_panel">
+        <div class="record">
+            <text class="panel_font">{{ recordString }}</text>
+        </div>
+        <div class="reset_btn" @click="reset">
+            <image style="width: 32px; height: 32px;" src="common/reset.png"></image>
+        </div>
+        <div class="timer">
+            <text class="panel_font">{{ timerString }}</text>
+        </div>
+    </div>
+    <div class="outer_list">
+        <div for="{{ (index, obj) in matrix }}" class="cube" @click="swap(obj.position, obj.value)">
+            <div if="{{ obj.class === 'blank' }}" class="inner_cube blank">
+                <text class="cube_font"></text>
+            </div>
+            <div else class="inner_cube">
+                <text class="cube_font">{{ obj.value }}</text>
+            </div>
+        </div>
+    </div>
+    <text class="popup_text" if="{{ popup }}">{{ popupText }}</text>
+</div>
