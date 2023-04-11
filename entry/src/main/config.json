@@ -5,6 +5,10 @@
     "version": {
       "code": 1000000,
       "name": "1.0.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 7
     }
   },
   "deviceConfig": {
@@ -17,6 +21,30 @@
       "deliveryWithInstall": true,
       "moduleName": "entry",
       "moduleType": "entry"
+    },
+    "distroFilter": {
+      "apiVersion": {
+        "policy": "include",
+        "value": [
+          5,
+          6,
+          7
+        ]
+      },
+      "screenShape": {
+        "policy": "include",
+        "value": [
+          "circle"
+        ]
+      },
+      "screenWindow": {
+        "policy": "include",
+        "value": [
+          "390*390",
+          "454*454",
+          "466*466"
+        ]
+      }
     },
     "abilities": [
       {

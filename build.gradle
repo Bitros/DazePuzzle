@@ -14,13 +14,13 @@ ohos {
             certpath file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.cer')
         }
         debug {
-            storeFile file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.p12')
-            storePassword '0000001942366173797388F7E27C175986E22574C7EC457C5219BF6BCEF8076E7FD606A989C0EF0DDD'
-            keyAlias = 'release'
-            keyPassword '00000019CE3EAE873A135B486BD7D433897859B95D78FCCB08ECA9D78692D7100C38E74152DA7177BD'
+            storeFile file('C:\\Users\\BITRWANG\\program\\Huawei\\Debug\\debug.p12')
+            storePassword '00000019FF5972D8B957D7120C6A8345B4550F3EA64A0410F906D137841AE8A2395700D2033792FBDC'
+            keyAlias = 'debug'
+            keyPassword '0000001954BDE2368A3C205BC04DE6642D290DBC185D13C67FE35ADB4933418A91B6E57D757A09A63C'
             signAlg = 'SHA256withECDSA'
-            profile file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\Daze Puzzle Release Profile.p7b')
-            certpath file('C:\\Users\\BITRWANG\\program\\Huawei\\Sign\\release.cer')
+            profile file('C:\\Users\\BITRWANG\\program\\Huawei\\Debug\\Daze Puzzle Debug ProfileDebug.p7b')
+            certpath file('C:\\Users\\BITRWANG\\program\\Huawei\\Debug\\debug.cer')
         }
     }
     compileSdkVersion 7
